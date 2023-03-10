@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/globalFragment"
+        android:icon="@drawable/baseline_circle_24"
+        android:title="@string/global" />
+    <item
+        android:id="@+id/allChatsFragment"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="@string/chats" />
+    <item
+        android:id="@+id/friendsFragment"
+        android:icon="@drawable/baseline_people_alt_24"
+        android:title="@string/friends" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="@string/account" />
+</menu>
