@@ -6,4 +6,6 @@
     <string name="chats">Chats</string>
     <string name="friends">Friends</string>
     <string name="account">Account</string>
+    <string name="outgoing">Outgoing</string>
+    <string name="incoming">Incoming</string>
 </resources>
