@@ -1,10 +1,10 @@
 package com.example.helloworldmessenger
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -19,6 +19,12 @@ class MainActivity : AppCompatActivity() {
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
         navController = navHostFragment.navController
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.logInFragment || destination.id == R.id.registerFragment)
+                bottomNavigationView.visibility = View.GONE
+            else
+                bottomNavigationView.visibility = View.VISIBLE
+        }
         bottomNavigationView.setupWithNavController(navController)
     }
 }

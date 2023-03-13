@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/allChatsFragment">
+    app:startDestination="@id/logInFragment">
 
     <fragment
         android:id="@+id/globalFragment"
@@ -25,4 +25,25 @@
         android:name="com.example.helloworldmessenger.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.helloworldmessenger.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_allChatsFragment"
+            app:destination="@id/allChatsFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.helloworldmessenger.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_allChatsFragment"
+            app:destination="@id/allChatsFragment" />
+    </fragment>
 </navigation>
