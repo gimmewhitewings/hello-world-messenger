@@ -7,4 +7,11 @@
     <string name="account">Аккаунт</string>
     <string name="outgoing">Исходящие</string>
     <string name="incoming">Входящие</string>
+    <string name="create_new_account">Создать новый аккаунт</string>
+    <string name="name">Имя</string>
+    <string name="add_avatar">Аватар</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегестрироваться</string>
 </resources>
