@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353659304417",
+    "project_id": "hello-world-messenger-f2390",
+    "storage_bucket": "hello-world-messenger-f2390.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353659304417:android:3d93b08acf20b84428baa0",
+        "android_client_info": {
+          "package_name": "com.example.helloworldmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353659304417-0p80toddtv5frnc2mv4r904nhjlcqmks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBlYkJU_BST2rG8LEg7YIt9SzHJkV5mwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353659304417-0p80toddtv5frnc2mv4r904nhjlcqmks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
