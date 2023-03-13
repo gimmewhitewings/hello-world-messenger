@@ -1,14 +1,16 @@
 package com.example.helloworldmessenger
 
+import android.graphics.Bitmap
 import android.os.Bundle
+import android.util.Base64
 import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.example.helloworldmessenger.databinding.FragmentRegisterBinding
+import java.io.ByteArrayOutputStream
 
 
 class RegisterFragment : Fragment() {
@@ -31,10 +33,24 @@ class RegisterFragment : Fragment() {
             if (isValidDetails())
                 signUp()
         }
+
+//        binding.chooseAvatarImageView.setOnClickListener {
+//
+//        }
     }
 
     private fun signUp() {
 
+    }
+
+    private fun encodeImage(bitmap: Bitmap): String {
+        val previewWidth = 150
+        val previewHeight = bitmap.height * previewWidth / bitmap.width
+        val previewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth, previewHeight, false)
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        previewBitmap.compress(Bitmap.CompressFormat.JPEG, 50, byteArrayOutputStream)
+        val bytes = byteArrayOutputStream.toByteArray()
+        return Base64.encodeToString(bytes, Base64.DEFAULT)
     }
 
     private fun isValidDetails(): Boolean {
@@ -77,6 +93,11 @@ class RegisterFragment : Fragment() {
             return false
         }
 
+        resetInputErrors()
+        return true
+    }
+
+    private fun resetInputErrors() {
         // reset all errors
         binding.inputName.error = null
         binding.inputEmail.error = null
@@ -87,7 +108,5 @@ class RegisterFragment : Fragment() {
         binding.inputEmail.isErrorEnabled = false
         binding.inputPassword.isErrorEnabled = false
         binding.inputConfirmPassword.isErrorEnabled = false
-
-        return true
     }
 }
