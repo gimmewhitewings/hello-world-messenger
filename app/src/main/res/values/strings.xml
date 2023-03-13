@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Hello World Messenger</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="global">Global</string>
     <string name="chats">Chats</string>
     <string name="friends">Friends</string>
@@ -15,9 +14,12 @@
     <string name="confirm_password">Confirm password</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="greetings">Welcome back!</string>
     <string name="log_in_to_continue">Log In to continue</string>
     <string name="log_in">Log In</string>
+    <string name="choose_avatar">Choose avatar</string>
+    <string name="name_error">Enter name</string>
+    <string name="email_error">Enter email</string>
+    <string name="password_error">Enter password</string>
+    <string name="confirm_password_error">Password does not match</string>
 </resources>

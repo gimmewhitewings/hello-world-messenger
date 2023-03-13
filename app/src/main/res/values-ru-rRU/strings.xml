@@ -17,4 +17,9 @@
     <string name="greetings">С возвращением!</string>
     <string name="log_in_to_continue">Войдите, чтобы продолжить</string>
     <string name="log_in">Войти</string>
+    <string name="choose_avatar">Выберите аватар</string>
+    <string name="name_error">Введите имя</string>
+    <string name="email_error">Введите почту</string>
+    <string name="password_error">Введите пароль</string>
+    <string name="confirm_password_error">Пароли не совпадают</string>
 </resources>
