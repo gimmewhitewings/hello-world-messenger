@@ -14,4 +14,7 @@
     <string name="confirm_password">Подтвердите пароль</string>
     <string name="sign_in">Войти</string>
     <string name="sign_up">Зарегестрироваться</string>
+    <string name="greetings">С возвращением!</string>
+    <string name="log_in_to_continue">Войдите, чтобы продолжить</string>
+    <string name="log_in">Войти</string>
 </resources>
